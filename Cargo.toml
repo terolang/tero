@@ -1,0 +1,17 @@
+[package]
+name = "tero"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "terolang"
+path = "src/lib.rs"
+
+[[bin]]
+name = "tero"
+path = "src/main.rs"
+
+[dependencies]
+inkwell = { git = "https://github.com/TheDan64/inkwell", branch = "master", features = ["llvm13-0"] }
