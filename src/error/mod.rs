@@ -2,7 +2,7 @@
  * Defines different error types that exist in the language.
  */
 pub enum ErrorType {
-    SyntaxError,
+  SyntaxError,
 }
 
 /**
@@ -14,15 +14,15 @@ pub enum ErrorType {
  * TODO: Add a stack trace
  */
 pub struct Error {
-    pub code: ErrorType,
-    pub message: String,
+  pub code: ErrorType,
+  pub message: String,
 }
 
 impl Error {
-    pub fn new(code: ErrorType, message: String) -> Error {
-        Error {
-            code: code,
-            message: message,
-        }
+  pub fn new(code: ErrorType, message: String) -> Error {
+    Error {
+      code: code,
+      message: message,
     }
+  }
 }
